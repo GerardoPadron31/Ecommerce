@@ -11,6 +11,7 @@ if (isset($_SESSION['username'])) {
 
 $alert = $_SESSION['alert'] ?? null;
 unset($_SESSION['alert']);
+$additionalStyles = ['css/login.css'];
 require __DIR__ . '/templates/header.php';
 ?>
     <div class="auth-card">
